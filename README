@@ -1,0 +1,14 @@
+Folosim registrii de 32 biti eax,ebx,ecx,edx deoarece elementele sunt de tip double word.
+Am initializat registrul ecx cu valoarea 0 pentru a-l folosi ca si contor in procesul de citire al celor 2 vectori .
+Apoi citesc intr un loop vectorul de numere in registrul eax si vectorul de baze in registrul ebx.
+Cat timp mai avem de citit sar la eticheta calcul .
+Intai testez ca baza sa fie in limita precizata.Daca nu se afla in intervalul 2..16
+sare la eticheta print2 si afiseaza mesajul corespunzator.Daca ecx e mai mare ca nums iese din program.
+Daca baza e valabila impart la baza retinuta prin registrul ebx.
+Catul este implicit salvat in eax ,iar restul in edx.Compar daca edx este mai mare ca 9.
+Daca da fac conversia corespunzatoare pt litere adunand valoarea corespunzatoare la codul ascii si pun pe stiva restul Apoi verific daca catul este mai mare decat 0.Daca este se intoarce la eticheta calcul
+si repeta operatia .Daca se afla in intervalul 0...9 restul, transform nr in caracter adunand '0' la rest si pun pe stiva. Operatiile se repeta pana cand registrul eax devine 0.
+Atunci sar la eticheta print unde scot de pe stiva restul sub forma de caracter si il afisez.
+Repet operatia cat timp mai sunt elemente pe stiva.Daca nu mai sunt adauga o linie noua si sare inapoi la operatia de citire.Daca ecx devine mai mare decat nr de elemente iese din program.
+
+
